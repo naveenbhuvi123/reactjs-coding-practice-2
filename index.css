@@ -1,0 +1,84 @@
+/* Write your code here. */
+* {
+  box-sizing: border-box;
+}
+body {
+  margin: 0px;
+}
+.notifications-background {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  font-family: "roboto";
+}
+.main-heading {
+  color: #0f1721;
+  font-family: "Roboto";
+  font-size: 32px;
+  font-weight: bold;
+  margin-bottom: 35px;
+}
+
+@media (min-width: 768px) {
+  .main-heading {
+    font-size: 45px;
+  }
+}
+.icon {
+  height: 25px;
+  width: 25px;
+  margin-right: 20px;
+}
+.notifications-cards {
+  display: flex;
+  flex-direction: column;
+  width: 80%;
+  max-width: 800px;
+}
+@media screen and (min-width: 768px) {
+  .notifications-cards {
+    width: 60%;
+  }
+  .notification-container {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-left: 16px;
+    padding-right: 25px;
+    margin-bottom: 45px;
+    border-radius: 15px;
+    padding: 20px;
+  }
+}
+.notification-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding-top: 12px;
+  padding-bottom: 12px;
+  padding-left: 10px;
+  padding-right: 10px;
+  margin-bottom: 20px;
+  border-radius: 15px;
+  padding: 20px;
+}
+
+.message {
+  font-size: 20px;
+  color: #ffffff;
+  font-family: "Roboto";
+}
+
+.primary-bg-color {
+  background-color: #0b69ff;
+}
+.success-bg-color {
+  background-color: #2dca73;
+}
+.warning-bg-color {
+  background-color: #ffb800;
+}
+.danger-bg-color {
+  background-color: #ff0b37;
+}
